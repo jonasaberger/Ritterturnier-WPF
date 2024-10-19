@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RitterturnierWPF"
         mc:Ignorable="d"
-        Title="Ritterturnier WPF" Height="450" Width="700" Icon="/icon.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Ritterturnier WPF" Height="450" Width="700" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/window_icon.png">
     <Canvas x:Name="Main_Canvas">
         <Label x:Name="Ritterturnier_Title" Content="Ritterturnier" Height="62" Width="320" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" FontFamily="Old English Text MT" FontSize="48" HorizontalAlignment="Left" Canvas.Left="10" VerticalAlignment="Center">
             <Label.RenderTransform>
@@ -65,6 +65,11 @@
                 </Label>
                 <Slider x:Name="Ausbildungsgrad_Slider" HorizontalAlignment="Left" Margin="160,50,0,0" VerticalAlignment="Top" Width="125" ValueChanged="Slider_ValueChanged" TickPlacement="BottomRight" Uid="d"/>
             </Grid>
+        </Grid>
+        <Grid x:Name="Outputs" Height="394" Width="330" HorizontalAlignment="Center" Canvas.Left="350" VerticalAlignment="Top" Canvas.Top="20">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,43,0,10">
+                <TextBlock TextWrapping="Wrap" ><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/></TextBlock>
+            </ScrollViewer>
         </Grid>
     </Canvas>
 </Window>

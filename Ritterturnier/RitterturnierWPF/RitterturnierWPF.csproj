@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="icon.png" />
+    <None Remove="window_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="icon.png" />
+    <Resource Include="window_icon.png" />
   </ItemGroup>
 
 </Project>
