@@ -14,7 +14,7 @@ namespace RitterturnierKonsole
             _teilnehmerliste = new List<Teilnehmer>();
         }
 
-        public string AddTeilnehmer(Teilnehmer teilnehmer)
+        public NameSchonVorhandenException AddTeilnehmer(Teilnehmer teilnehmer)
         {
             try
             {
@@ -27,9 +27,9 @@ namespace RitterturnierKonsole
             catch(NameSchonVorhandenException e)
             {
                 Console.WriteLine(e.Message);
-                return e.Message;
+                return e;
             }
-            return "";
+            return null;
         }
 
         // Ausgabe aller Teilnehmer

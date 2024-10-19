@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RitterturnierKonsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c926adeff4ab22f4a9d08bcf0ffd5fb45ad8e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee7f15956a5ae9f826a2769a9c1a82ee3644df47")]
 [assembly: System.Reflection.AssemblyProductAttribute("RitterturnierKonsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RitterturnierKonsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
