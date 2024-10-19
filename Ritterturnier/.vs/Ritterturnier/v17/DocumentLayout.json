@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\ritter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\ritter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\nameschonvorhandenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\nameschonvorhandenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\waffe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\waffe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\teilnehmer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\teilnehmer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\teilnehmerliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\teilnehmerliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 282,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +42,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Teilnehmer.cs",
+              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Teilnehmer.cs",
+              "RelativeDocumentMoniker": "RitterturnierKonsole\\Teilnehmer.cs",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Teilnehmer.cs",
+              "RelativeToolTip": "RitterturnierKonsole\\Teilnehmer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:02:46.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Waffe.cs",
+              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Waffe.cs",
+              "RelativeDocumentMoniker": "RitterturnierKonsole\\Waffe.cs",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Waffe.cs",
+              "RelativeToolTip": "RitterturnierKonsole\\Waffe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:02:38.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Ritter.cs",
+              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Ritter.cs",
+              "RelativeDocumentMoniker": "RitterturnierKonsole\\Ritter.cs",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Ritter.cs",
+              "RelativeToolTip": "RitterturnierKonsole\\Ritter.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:58:54.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Program.cs",
               "RelativeDocumentMoniker": "RitterturnierKonsole\\Program.cs",
               "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Program.cs",
               "RelativeToolTip": "RitterturnierKonsole\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:22:01.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NameSchonVorhandenException.cs",
+              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\NameSchonVorhandenException.cs",
+              "RelativeDocumentMoniker": "RitterturnierKonsole\\NameSchonVorhandenException.cs",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\NameSchonVorhandenException.cs",
+              "RelativeToolTip": "RitterturnierKonsole\\NameSchonVorhandenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:30:49.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Teilnehmerliste.cs",
+              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Teilnehmerliste.cs",
+              "RelativeDocumentMoniker": "RitterturnierKonsole\\Teilnehmerliste.cs",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\Teilnehmerliste.cs",
+              "RelativeToolTip": "RitterturnierKonsole\\Teilnehmerliste.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:29:35.74Z",
               "EditorCaption": ""
             }
           ]
