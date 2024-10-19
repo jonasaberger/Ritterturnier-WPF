@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RitterturnierKonsole", "RitterturnierKonsole\RitterturnierKonsole.csproj", "{02AD96A0-3565-481D-94B7-E433211B8E14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitterturnierXUNIT", "RitterturnierXUNIT\RitterturnierXUNIT.csproj", "{9A29BBDF-A3A4-4414-AD9F-F2A521755347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RitterturnierXUNIT", "RitterturnierXUNIT\RitterturnierXUNIT.csproj", "{9A29BBDF-A3A4-4414-AD9F-F2A521755347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitterturnierWPF", "RitterturnierWPF\RitterturnierWPF.csproj", "{6870BC93-CB55-4924-8B39-9B18B4025CE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9A29BBDF-A3A4-4414-AD9F-F2A521755347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A29BBDF-A3A4-4414-AD9F-F2A521755347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A29BBDF-A3A4-4414-AD9F-F2A521755347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6870BC93-CB55-4924-8B39-9B18B4025CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6870BC93-CB55-4924-8B39-9B18B4025CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6870BC93-CB55-4924-8B39-9B18B4025CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6870BC93-CB55-4924-8B39-9B18B4025CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
