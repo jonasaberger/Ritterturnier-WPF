@@ -1,0 +1,15 @@
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\bin\Debug\net8.0\RitterturnierKonsole.exe
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\bin\Debug\net8.0\RitterturnierKonsole.deps.json
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\bin\Debug\net8.0\RitterturnierKonsole.runtimeconfig.json
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\bin\Debug\net8.0\RitterturnierKonsole.dll
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\bin\Debug\net8.0\RitterturnierKonsole.pdb
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.AssemblyInfoInputs.cache
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.AssemblyInfo.cs
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.csproj.CoreCompileInputs.cache
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.sourcelink.json
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.dll
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\refint\RitterturnierKonsole.dll
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.pdb
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\RitterturnierKonsole.genruntimeconfig.cache
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierKonsole\obj\Debug\net8.0\ref\RitterturnierKonsole.dll
