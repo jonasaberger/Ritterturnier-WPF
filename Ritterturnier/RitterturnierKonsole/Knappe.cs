@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace RitterturnierKonsole
 {
-    public class Knappe : Teilnehmer
+    public class Knappe
     {
+        public string _name {  get; set; }
+        public string _telefonnummer {  get; set; }
         public int _ausbildungsgrad {  get; set; }
-        public Knappe(string name, string telefonnummer, int ausbildungsgrad) : base(name,telefonnummer) {
+
+        public Knappe(string name, string telefonnummer, int ausbildungsgrad) {
             this._name = name;
             this._telefonnummer = telefonnummer;
             this._ausbildungsgrad = ausbildungsgrad;
@@ -17,7 +20,7 @@ namespace RitterturnierKonsole
 
         public override string ToString()
         {
-            return base.ToString() + $"Grad: {_ausbildungsgrad}\n";
+            return $"\t\tKnappe: {_name}\tGrad: {_ausbildungsgrad}\n";
         }
 
     }

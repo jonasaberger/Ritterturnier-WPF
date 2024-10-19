@@ -28,10 +28,7 @@ namespace RitterturnierKonsole
             if (this.GetType() == typeof(Ritter)) {
                 return $"Ritter {_id}\tName: {_name}\t\t";
             }
-            else if (this.GetType() == typeof(Knappe)) // toString fuer Knappe
-            {
-                return $"\t\tKnappe: {_name}\t";
-            }
+
             return $"Name: {_name}\t\t";
         }
 
