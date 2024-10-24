@@ -134,29 +134,28 @@ namespace RitterturnierWPF
                     if (exception == null)
                     {
                         Statusbar.Content = "Erstellung Erfolgreich!";
+                        Statusbar.Foreground = new SolidColorBrush(Colors.White);
+                        Statusbar.Background = new SolidColorBrush(Colors.Green);
+
                         // Liste aktualisieren
                         Main_Output.Text = _ritterturnier._teilnehmerliste.ListeAlleTeilnehmer();
-
                     }
                     else { throw exception; }
                 }
                 catch(NameSchonVorhandenException ex)
                 {
                     Statusbar.Content = ex.Message;
+                    Statusbar.Foreground = new SolidColorBrush(Colors.White);
+                    Statusbar.Background = new SolidColorBrush(Colors.Red);
+                    
                 }
             }
             catch(UngueltigesInputException ex)
             {
                 Statusbar.Content = ex.Message;
+                Statusbar.Foreground = new SolidColorBrush(Colors.White);
+                Statusbar.Background = new SolidColorBrush(Colors.Red);
             }
-           
-
-            
-
-
-
-
-            // Refresh Liste
         }
 
         private void ValidateInputs()
