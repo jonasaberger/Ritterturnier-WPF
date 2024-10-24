@@ -14,6 +14,12 @@ namespace RitterturnierKonsole
             _teilnehmerliste = new List<Teilnehmer>();
         }
 
+        public Teilnehmerliste(List<Teilnehmer> teils)
+        {
+            _teilnehmerliste = teils;
+
+        }
+
         public NameSchonVorhandenException AddTeilnehmer(Teilnehmer teilnehmer)
         {
             try

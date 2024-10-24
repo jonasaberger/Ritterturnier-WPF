@@ -22,6 +22,7 @@ namespace RitterturnierWPF
     {
         // Backend-Properties
         public Ritterturnier _ritterturnier;
+        public FileManager _filemanager;
         public string _ritterName;
         public string _ritterTelef;
         public string _ritterRufname;
@@ -42,6 +43,7 @@ namespace RitterturnierWPF
         {
             InitializeComponent();
             _ritterturnier = new Ritterturnier(new Teilnehmerliste());
+            _filemanager = new FileManager();
 
             // Initialize WaffeComboBox
             WaffenArtComboBox.Items.Add("Schwert");
@@ -133,9 +135,7 @@ namespace RitterturnierWPF
                     // Erfolgreiche Erstellung eines Ritters
                     if (exception == null)
                     {
-                        Statusbar.Content = "Erstellung Erfolgreich!";
-                        Statusbar.Foreground = new SolidColorBrush(Colors.White);
-                        Statusbar.Background = new SolidColorBrush(Colors.Green);
+                        StatusSuccess("Erstellung Erfolgreich!");
 
                         // Liste aktualisieren
                         Main_Output.Text = _ritterturnier._teilnehmerliste.ListeAlleTeilnehmer();
@@ -144,18 +144,27 @@ namespace RitterturnierWPF
                 }
                 catch(NameSchonVorhandenException ex)
                 {
-                    Statusbar.Content = ex.Message;
-                    Statusbar.Foreground = new SolidColorBrush(Colors.White);
-                    Statusbar.Background = new SolidColorBrush(Colors.Red);
-                    
+                    StatusError(ex.Message);
                 }
             }
             catch(UngueltigesInputException ex)
             {
-                Statusbar.Content = ex.Message;
-                Statusbar.Foreground = new SolidColorBrush(Colors.White);
-                Statusbar.Background = new SolidColorBrush(Colors.Red);
+                StatusError(ex.Message);
             }
+        }
+
+        private void StatusError(string message)
+        {
+            Statusbar.Foreground = new SolidColorBrush(Colors.White);
+            Statusbar.Background = new SolidColorBrush(Colors.Red);
+            Statusbar.Content = message;
+        }
+
+        private void StatusSuccess(string message) 
+        {
+            Statusbar.Foreground = new SolidColorBrush(Colors.White);
+            Statusbar.Background = new SolidColorBrush(Colors.Green);
+            Statusbar.Content = message;
         }
 
         private void ValidateInputs()
@@ -231,6 +240,33 @@ namespace RitterturnierWPF
             }
 
         }
- 
+
+        private void Save_Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _filemanager.ToFile(_ritterturnier._teilnehmerliste);
+                StatusSuccess("Speichern Erfolgreich!");
+            }
+            catch (Exception ex)
+            {
+                StatusError("Fehler beim Speichern!");
+            }
+            
+        }
+
+        private void Load_Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _ritterturnier._teilnehmerliste = _filemanager.FromFile();
+                StatusSuccess("Laden Erfolgreich");
+                Main_Output.Text = _ritterturnier._teilnehmerliste.ListeAlleTeilnehmer();
+            }
+            catch (Exception ex)
+            {
+                StatusError("Fehler beim Laden!");
+            }
+        }
     }
 }

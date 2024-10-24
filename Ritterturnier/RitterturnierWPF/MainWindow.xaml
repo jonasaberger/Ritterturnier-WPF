@@ -82,5 +82,7 @@
 
         </Grid>
         <Label x:Name="Statusbar" Content="Statusbar" Canvas.Left="350.5" Canvas.Top="536.84" HorizontalAlignment="Center" VerticalAlignment="Top" Width="349" Height="28" Background="{x:Null}" Foreground="Black"/>
+        <Button x:Name="Save_Button" Content="Speichern" Canvas.Left="580" Canvas.Top="25" Width="100" Height="23" Click="Save_Button_Click"/>
+        <Button x:Name="Load_Button" Content="Laden" Canvas.Left="465" Canvas.Top="25" Width="100" Height="23" Click="Load_Button_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
