@@ -23,7 +23,7 @@
                 <TextBox x:Name="Name_Input" HorizontalAlignment="Left" Margin="30,42,0,0" Text="Name" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
                 <TextBox x:Name="Telef_Input" HorizontalAlignment="Left" Margin="30,77,0,0" Text="Telefon" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
                 <TextBox x:Name="Rufname_Input" HorizontalAlignment="Left" Margin="30,113,0,0" Text="Rufname" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <CheckBox x:Name="WaffeCheckBox" Content="Waffe" HorizontalAlignment="Left" Margin="176,65,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
+                <CheckBox x:Name="WaffeCheckBox" Content="Waffe" HorizontalAlignment="Left" Margin="176,45,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
                     <CheckBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
@@ -33,7 +33,7 @@
                         </TransformGroup>
                     </CheckBox.RenderTransform>
                 </CheckBox>
-                <CheckBox x:Name="KnappeCheckBox" Content="Knappe" HorizontalAlignment="Left" Margin="176,100,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
+                <CheckBox x:Name="KnappeCheckBox" Content="Knappe" HorizontalAlignment="Left" Margin="176,80,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
                     <CheckBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
@@ -43,6 +43,7 @@
                         </TransformGroup>
                     </CheckBox.RenderTransform>
                 </CheckBox>
+                <Button Content="Erstellen" HorizontalAlignment="Left" Margin="170,113,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="Button_Click"/>
             </Grid>
             <Grid x:Name="Input_Waffe" Width="310" Background="#FF672929" Height="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,164,0,0">
                 <Label x:Name="Waffe_Label" Content="Waffe&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
@@ -66,10 +67,11 @@
                 <Slider x:Name="Ausbildungsgrad_Slider" HorizontalAlignment="Left" Margin="160,50,0,0" VerticalAlignment="Top" Width="125" ValueChanged="Slider_ValueChanged" TickPlacement="BottomRight" Uid="d"/>
             </Grid>
         </Grid>
-        <Grid x:Name="Outputs" Height="394" Width="330" HorizontalAlignment="Center" Canvas.Left="350" VerticalAlignment="Top" Canvas.Top="20">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,43,0,10">
+        <Grid x:Name="Outputs" Height="376" Width="330" HorizontalAlignment="Center" Canvas.Left="350" VerticalAlignment="Top" Canvas.Top="22">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,36">
                 <TextBlock TextWrapping="Wrap" ><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Language="de-at" Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/><LineBreak/><Run Text="X"/></TextBlock>
             </ScrollViewer>
         </Grid>
+        <Label x:Name="Statusbar" Content="Statusbar" Canvas.Left="331" Canvas.Top="369" HorizontalAlignment="Center" VerticalAlignment="Top" Width="349" Height="31"/>
     </Canvas>
 </Window>
