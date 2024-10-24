@@ -20,10 +20,10 @@
         <Grid x:Name="Inputs" Height="372" Width="350" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="62">
             <Grid x:Name="Input_Ritter" Width="310" Background="#FF672929" Height="155" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Label x:Name="Ritter_Label" Content="Ritter" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
-                <TextBox x:Name="Name_Input" HorizontalAlignment="Left" Margin="30,42,0,0" Text="Name" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <TextBox x:Name="Telef_Input" HorizontalAlignment="Left" Margin="30,77,0,0" Text="Telefon" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <TextBox x:Name="Rufname_Input" HorizontalAlignment="Left" Margin="30,113,0,0" Text="Rufname" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <CheckBox x:Name="WaffeCheckBox" Content="Waffe" HorizontalAlignment="Left" Margin="176,45,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
+                <TextBox x:Name="Name_Input" HorizontalAlignment="Left" Margin="30,42,0,0" Text="Name" VerticalAlignment="Top" Width="100" Height="25" FontSize="16"/>
+                <TextBox x:Name="Telef_Input" HorizontalAlignment="Left" Margin="30,77,0,0" Text="Telefon" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" />
+                <TextBox x:Name="Rufname_Input" HorizontalAlignment="Left" Margin="30,113,0,0" Text="Rufname" VerticalAlignment="Top" Width="100" Height="25" FontSize="16"/>
+                <CheckBox x:Name="WaffeCheckBox" Content="Waffe" HorizontalAlignment="Left" Margin="176,45,0,0" VerticalAlignment="Top" Checked="WaffeCheckbox_Checked" Unchecked="WaffeCheckbox_Unchecked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
                     <CheckBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
@@ -33,7 +33,7 @@
                         </TransformGroup>
                     </CheckBox.RenderTransform>
                 </CheckBox>
-                <CheckBox x:Name="KnappeCheckBox" Content="Knappe" HorizontalAlignment="Left" Margin="176,80,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5">
+                <CheckBox x:Name="KnappeCheckBox" Content="Knappe" HorizontalAlignment="Left" Margin="176,80,0,0" VerticalAlignment="Top" Height="20" Width="62" IsChecked="False" RenderTransformOrigin="0.5,0.5" Checked="KnappeCheckBox_Checked" Unchecked="KnappeCheckBox_Unchecked">
                     <CheckBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
@@ -43,18 +43,18 @@
                         </TransformGroup>
                     </CheckBox.RenderTransform>
                 </CheckBox>
-                <Button Content="Erstellen" HorizontalAlignment="Left" Margin="170,113,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="Button_Click"/>
+                <Button Content="Erstellen" HorizontalAlignment="Left" Margin="170,113,0,0" VerticalAlignment="Top" Height="25" Width="100"/>
             </Grid>
             <Grid x:Name="Input_Waffe" Width="310" Background="#FF672929" Height="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,164,0,0">
-                <Label x:Name="Waffe_Label" Content="Waffe&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
-                <TextBox x:Name="Bezeichnung_Input" HorizontalAlignment="Left" Margin="30,43,0,0" Text="Bezeichnung" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <ComboBox x:Name="WaffenArtComboBox" Width="120" HorizontalAlignment="Left" Text="WaffenArt" Margin="160,43,0,12" RenderTransformOrigin="0.496,-8.726"/>
+                <Label x:Name="Waffe_Label" Content="Waffe" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold" IsEnabled="False"/>
+                <TextBox x:Name="WaffeBezeichnung_Input" HorizontalAlignment="Left" Margin="30,43,0,0" Text="Bezeichnung" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" IsEnabled="False"/>
+                <ComboBox x:Name="WaffenArtComboBox" Width="120" HorizontalAlignment="Left" Text="WaffenArt" Margin="160,43,0,12" RenderTransformOrigin="0.496,-8.726" IsEnabled="False"/>
             </Grid>
             <Grid x:Name="Input_Waffe_Kopieren" Width="310" Background="#FF672929" Height="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,258,0,0">
-                <Label x:Name="Knappe_Label" Content="Knappe" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="35" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
-                <TextBox x:Name="Name_Input1" HorizontalAlignment="Left" Margin="30,45,0,0" Text="Name" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" TextChanged="Name_Input_TextChanged"/>
-                <Label
-    Width="120" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontSize="14" Content="Ausbildungsgrad" Margin="162,0,0,0" Height="34" RenderTransformOrigin="0.5,0.5">
+                <Label x:Name="Knappe_Label" Content="Knappe" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="35" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold" IsEnabled="False"/>
+                <TextBox x:Name="KnappeName_Input" HorizontalAlignment="Left" Margin="30,45,0,0" Text="Name" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" IsEnabled="False"/>
+                <Label x:Name="Ausbildungsgrad_Label"
+    Width="120" VerticalAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontSize="14" Content="Ausbildungsgrad" Margin="162,0,0,0" Height="34" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
                     <Label.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="1"/>
@@ -64,7 +64,7 @@
                         </TransformGroup>
                     </Label.RenderTransform>
                 </Label>
-                <Slider x:Name="Ausbildungsgrad_Slider" HorizontalAlignment="Left" Margin="160,50,0,0" VerticalAlignment="Top" Width="125" ValueChanged="Slider_ValueChanged" TickPlacement="BottomRight" Uid="d"/>
+                <Slider x:Name="Ausbildungsgrad_Slider" HorizontalAlignment="Left" Margin="160,50,0,0" VerticalAlignment="Top" Width="125" TickPlacement="BottomRight" Uid="d" IsEnabled="False"/>
             </Grid>
         </Grid>
         <Grid x:Name="Outputs" Height="376" Width="330" HorizontalAlignment="Center" Canvas.Left="350" VerticalAlignment="Top" Canvas.Top="22">

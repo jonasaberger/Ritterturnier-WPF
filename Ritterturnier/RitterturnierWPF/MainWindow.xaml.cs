@@ -16,34 +16,51 @@ namespace RitterturnierWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        // Checkboxes
+        public bool _waffeCheckBoxChecked = false;
+        public bool _knappeCheckBoxchecked = false;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged()
+        // Checkbox-Logic
+        private void WaffeCheckbox_Checked (object sender, RoutedEventArgs e)
         {
-
+           Waffe_Label.IsEnabled = true;
+           WaffeBezeichnung_Input.IsEnabled = true;
+           WaffenArtComboBox.IsEnabled = true;
+           _waffeCheckBoxChecked = true;
+        }
+        private void WaffeCheckbox_Unchecked (object sender, RoutedEventArgs e)
+        {
+           Waffe_Label.IsEnabled = false;
+           WaffeBezeichnung_Input.IsEnabled = false;
+           WaffenArtComboBox.IsEnabled = false;
+           _waffeCheckBoxChecked = false;
         }
 
-        private void Name_Input_TextChanged(object sender, TextChangedEventArgs e)
+        private void KnappeCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
+            Knappe_Label.IsEnabled = true;
+            KnappeName_Input.IsEnabled = true;
+            Ausbildungsgrad_Label.IsEnabled = true;
+            Ausbildungsgrad_Slider.IsEnabled = true;
+            _knappeCheckBoxchecked = true;
         }
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void KnappeCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            Knappe_Label.IsEnabled = false;
+            KnappeName_Input.IsEnabled = false;
+            Ausbildungsgrad_Label.IsEnabled = false;
+            Ausbildungsgrad_Slider.IsEnabled = false;
+            _knappeCheckBoxchecked = false;
         }
-
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+    
+    
+        
+    
     }
 }
