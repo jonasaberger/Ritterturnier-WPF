@@ -12,7 +12,7 @@ namespace RitterturnierKonsole
 
         public NameSchonVorhandenException(string name)
         {
-            this.Message = $"Nochmaliges Hinzufuegen mit bestehenden Namen\nException: {name} ist schon vorhanden!";
+            this.Message = $"Ritter '{name}' ist schon vorhanden!";
         }
 
 

@@ -26,10 +26,10 @@ namespace RitterturnierKonsole
         {
             // toString fuer Ritter
             if (this.GetType() == typeof(Ritter)) {
-                return $"Ritter {_id}\tName: {_name}\t\t";
+                return $"Ritter\t{_id}\tName:\t{_name}\t\t";
             }
 
-            return $"Name: {_name}\t\t";
+            return $"Name:\t{_name}\t\t";
         }
 
     }

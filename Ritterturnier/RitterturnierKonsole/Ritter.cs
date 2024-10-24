@@ -39,18 +39,18 @@ namespace RitterturnierKonsole
         {
             //Wenn kein Knappe & Waffe vorhanden ist
             if(_knappe != null && _waffe != null) {
-                return base.ToString() + $"Rufname: {_rufname}\n" + _knappe.ToString() + _waffe.ToString();
+                return base.ToString() + $"Rufname:\t{_rufname}\n" + _knappe.ToString() + _waffe.ToString();
             }
             if(_knappe == null && _waffe != null) // Wenn nur kein Knappe vorhanden
             {
-                return base.ToString() + $"Rufname: {_rufname}\n" + _waffe.ToString();
+                return base.ToString() + $"Rufname:\t{_rufname}\n" + _waffe.ToString();
             }
             if (_knappe == null && _waffe != null) // Wenn nur kein Waffe vorhanden
             {
-                return base.ToString() + $"Rufname: {_rufname}\n" + _knappe.ToString();
+                return base.ToString() + $"Rufname:\t{_rufname}\n" + _knappe.ToString();
             }
 
-            return base.ToString() + $"Rufname: {_rufname}\n";
+            return base.ToString() + $"Rufname:\t{_rufname}\n";
         }
 
     }

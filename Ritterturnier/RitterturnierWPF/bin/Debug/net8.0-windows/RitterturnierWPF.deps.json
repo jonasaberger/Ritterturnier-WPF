@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "RitterturnierWPF/1.0.0": {
+        "dependencies": {
+          "RitterturnierKonsole": "1.0.0"
+        },
         "runtime": {
           "RitterturnierWPF.dll": {}
+        }
+      },
+      "RitterturnierKonsole/1.0.0": {
+        "runtime": {
+          "RitterturnierKonsole.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "RitterturnierWPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RitterturnierKonsole/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

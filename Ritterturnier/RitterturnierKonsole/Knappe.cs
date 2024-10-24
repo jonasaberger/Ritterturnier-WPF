@@ -20,7 +20,7 @@ namespace RitterturnierKonsole
 
         public override string ToString()
         {
-            return $"\t\tKnappe: {_name}\tGrad: {_ausbildungsgrad}\n";
+            return $"\t\tKnappe:\t{_name}\t\tGrad:\t\t{_ausbildungsgrad}\n";
         }
 
     }

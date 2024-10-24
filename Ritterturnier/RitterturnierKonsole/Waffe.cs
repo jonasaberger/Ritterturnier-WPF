@@ -17,7 +17,7 @@ namespace RitterturnierKonsole
         }
 
         public override string ToString() {
-            return $"\t\tWaffe: {_bezeichnung}\tArt: {_waffenArt}\n";
+            return $"\t\tWaffe:\t{_bezeichnung}\t\tArt:\t\t{_waffenArt}\n";
         }
     }
 }

@@ -19,3 +19,10 @@ C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-wi
 C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\RitterturnierWPF.pdb
 C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\RitterturnierWPF.genruntimeconfig.cache
 C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\ref\RitterturnierWPF.dll
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\bin\Debug\net8.0-windows\RitterturnierKonsole.deps.json
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\bin\Debug\net8.0-windows\RitterturnierKonsole.runtimeconfig.json
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\bin\Debug\net8.0-windows\RitterturnierKonsole.exe
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\bin\Debug\net8.0-windows\RitterturnierKonsole.dll
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\bin\Debug\net8.0-windows\RitterturnierKonsole.pdb
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\RitterturnierWPF.csproj.AssemblyReference.cache
+C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\Rittertu.208424EA.Up2Date

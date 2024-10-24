@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RitterturnierKonsole\RitterturnierKonsole.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="window_icon.png" />
   </ItemGroup>
 
