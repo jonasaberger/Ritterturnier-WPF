@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RitterturnierXUNIT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3f49c9e075b19e2ec1532a0d328bff66252c0ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6718fd049eb196c7e69d1d2921ef5cf17b838ad0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RitterturnierXUNIT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RitterturnierXUNIT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

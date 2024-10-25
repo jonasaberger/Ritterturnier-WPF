@@ -1,5 +1,6 @@
 ﻿using System.CodeDom;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -167,6 +168,12 @@ namespace RitterturnierWPF
             Statusbar.Content = message;
         }
 
+        private bool TelefValidate(string telefonnummer)
+        {
+            Regex telefonRegex = new Regex("\\(?\\+[0-9]{1,3}\\)? ?-?[0-9]{1,3} ?-?[0-9]{3,5} ?-?[0-9]{4}( ?-?[0-9]{3})? ?(\\w{1,10}\\s?\\d{1,6})?");
+            return telefonRegex.IsMatch(telefonnummer);
+        }
+
         private void ValidateInputs()
         {
             // Ritter
@@ -178,9 +185,17 @@ namespace RitterturnierWPF
             {
                 throw new UngueltigesInputException("Ritter-Name");
             }
-            if(Telef_Input.Text != "" )
+            if(Telef_Input.Text != "")
             {
-                _ritterTelef = Telef_Input.Text;
+                if(TelefValidate(Telef_Input.Text))
+                {
+                    _ritterTelef = Telef_Input.Text;
+                }
+                else
+                {
+                    throw new UngueltigesInputException("Telefon-Syntax");
+                }
+                
             }
             else
             {
