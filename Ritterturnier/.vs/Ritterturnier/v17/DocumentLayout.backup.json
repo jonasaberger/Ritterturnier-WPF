@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierkonsole\\saves\\ritterturnier-save.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{02AD96A0-3565-481D-94B7-E433211B8E14}|RitterturnierKonsole\\RitterturnierKonsole.csproj|solutionrelative:ritterturnierkonsole\\saves\\ritterturnier-save.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|solutionrelative:ritterturnierwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|solutionrelative:ritterturnierwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|c:\\gitrepos\\ritterturnier-wpf\\ritterturnier\\ritterturnierwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6870BC93-CB55-4924-8B39-9B18B4025CE4}|RitterturnierWPF\\RitterturnierWPF.csproj|solutionrelative:ritterturnierwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 282,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,53 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ritterturnier-save.json",
-              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\saves\\ritterturnier-save.json",
-              "RelativeDocumentMoniker": "RitterturnierKonsole\\saves\\ritterturnier-save.json",
-              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\saves\\ritterturnier-save.json",
-              "RelativeToolTip": "RitterturnierKonsole\\saves\\ritterturnier-save.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-24T17:28:52.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FileManager.cs",
-              "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\FileManager.cs",
-              "RelativeDocumentMoniker": "RitterturnierKonsole\\FileManager.cs",
-              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierKonsole\\FileManager.cs",
-              "RelativeToolTip": "RitterturnierKonsole\\FileManager.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T17:26:14.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "RitterturnierWPF\\MainWindow.xaml",
-              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierWPF\\MainWindow.xaml",
-              "RelativeToolTip": "RitterturnierWPF\\MainWindow.xaml",
+              "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierWPF\\MainWindow.xaml*",
+              "RelativeToolTip": "RitterturnierWPF\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-24T17:17:29.286Z",
+              "WhenOpened": "2024-10-25T05:51:12.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "RitterturnierWPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\gitRepos\\Ritterturnier-WPF\\Ritterturnier\\RitterturnierWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "RitterturnierWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAcwLQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T17:17:23.973Z",
+              "WhenOpened": "2024-10-25T05:43:15.815Z",
               "EditorCaption": ""
             }
           ]

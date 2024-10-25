@@ -6,8 +6,28 @@
         xmlns:local="clr-namespace:RitterturnierWPF"
         mc:Ignorable="d"
         Title="Ritterturnier WPF" Height="600" Width="700" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/window_icon.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Exec.jpg" Stretch="Fill"></ImageBrush>
+    </Window.Background>
+
     <Canvas x:Name="Main_Canvas">
-        <Label x:Name="Ritterturnier_Title" Content="Ritterturnier" Height="62" Width="320" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" FontFamily="Old English Text MT" FontSize="48" HorizontalAlignment="Left" Canvas.Left="10" VerticalAlignment="Center">
+        <Label x:Name="Ritterturnier_Title" Content="Ritterturnier" Height="62" Width="320" 
+       RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" 
+       FontFamily="Old English Text MT" FontSize="48" HorizontalAlignment="Center" 
+       Canvas.Left="20" VerticalAlignment="Center" Background="Transparent" 
+       Foreground="#FF9B1921" Canvas.Top="10">
+            <Label.Template>
+                <ControlTemplate TargetType="Label">
+                    <TextBlock Text="{TemplateBinding Content}" FontFamily="Old English Text MT" 
+                       FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock.Effect>
+                            <!-- Super-thick outline effect -->
+                            <DropShadowEffect Color="Black" ShadowDepth="0" Opacity="1" BlurRadius="20"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </ControlTemplate>
+            </Label.Template>
+
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,9 +37,10 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+
         <Border x:Name="InputsBorder" Height="515" Width="350" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="75" BorderBrush="Black" BorderThickness="0,0,2,0">
             <Grid x:Name="Inputs">
-                <Grid x:Name="Input_Ritter" Width="310" Background="White" Height="212" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid x:Name="Input_Ritter" Width="310" Height="212" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF7C6C6C" Opacity="0.85">
                     <Label x:Name="Ritter_Label" Content="Ritter" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
                     <TextBox x:Name="Name_Input" HorizontalAlignment="Left" Margin="30,65,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16"/>
                     <TextBox x:Name="Telef_Input" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" />
@@ -50,7 +71,7 @@
                     <Label x:Name="Name_Label" Content="Name" HorizontalAlignment="Left" Margin="15,38,0,0" VerticalAlignment="Top"/>
                 </Grid>
                 <Border x:Name="WaffeBorder" Width="310" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,217,0,0" BorderBrush="Black" BorderThickness="0,1,0,0">
-                    <Grid x:Name="Input_Waffe" Background="White">
+                    <Grid x:Name="Input_Waffe" Background="#FF7C6C6C" Opacity="0.85">
                         <Label x:Name="Waffe_Label" Content="Waffe" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold" IsEnabled="False"/>
                         <TextBox x:Name="WaffeBezeichnung_Input" HorizontalAlignment="Left" Margin="30,65,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" IsEnabled="False"/>
                         <ComboBox x:Name="WaffenArtComboBox" Width="120" HorizontalAlignment="Left" Text="WaffenArt" Margin="170,65,0,10" RenderTransformOrigin="0.496,-8.726" IsEnabled="False" Height="25" SelectedIndex="0"/>
@@ -59,7 +80,7 @@
                     </Grid>
                 </Border>
                 <Border x:Name="KnappeBorder1" Width="310" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,323,0,0" BorderBrush="Black" BorderThickness="0,1,0,0">
-                    <Grid x:Name="Input_Knappe" Background="White" Margin="0,0,0,-56">
+                    <Grid x:Name="Input_Knappe" Background="#FF7C6C6C" Margin="0,0,0,-56" Opacity="0.85">
                         <Label x:Name="Knappe_Label" Content="Knappe" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="35" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold" IsEnabled="False"/>
                         <TextBox x:Name="KnappeName_Input" HorizontalAlignment="Left" Margin="30,65,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" IsEnabled="False"/>
                         <Slider x:Name="Ausbildungsgrad_Slider" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top" Width="125" TickPlacement="BottomRight" Uid="d" IsEnabled="False" Value="5"/>
@@ -77,7 +98,7 @@
                 <ColumnDefinition Width="83*"/>
             </Grid.ColumnDefinitions>
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,0,0,-102" Grid.ColumnSpan="2">
-                <TextBlock x:Name="Main_Output" TextWrapping="NoWrap" RenderTransformOrigin="0.492,0.586" Background="White" Height="510" />
+                <TextBlock x:Name="Main_Output" TextWrapping="NoWrap" RenderTransformOrigin="0.492,0.586" Background="#FF7C6C6C" Height="510" Opacity="0.85" />
             </ScrollViewer>
 
         </Grid>

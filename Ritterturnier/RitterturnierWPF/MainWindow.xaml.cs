@@ -178,7 +178,7 @@ namespace RitterturnierWPF
             {
                 throw new UngueltigesInputException("Ritter-Name");
             }
-            if(Telef_Input.Text != "")
+            if(Telef_Input.Text != "" )
             {
                 _ritterTelef = Telef_Input.Text;
             }

@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Exec.jpg" />
     <None Remove="window_icon.png" />
   </ItemGroup>
 
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Exec.jpg" />
     <Resource Include="window_icon.png" />
   </ItemGroup>
 
