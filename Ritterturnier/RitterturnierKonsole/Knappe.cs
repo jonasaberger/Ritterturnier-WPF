@@ -10,21 +10,21 @@ namespace RitterturnierKonsole
     public class Knappe
     {
         [JsonInclude]
-        public string _name {  get; set; }
+        public string Name {  get; set; }
         [JsonInclude]
-        public string _telefonnummer {  get; set; }
+        public string Telefonnummer {  get; set; }
         [JsonInclude]
-        public int _ausbildungsgrad {  get; set; }
+        public int Ausbildungsgrad {  get; set; }
 
         public Knappe(string name, string telefonnummer, int ausbildungsgrad) {
-            this._name = name;
-            this._telefonnummer = telefonnummer;
-            this._ausbildungsgrad = ausbildungsgrad;
+            this.Name = name;
+            this.Telefonnummer = telefonnummer;
+            this.Ausbildungsgrad = ausbildungsgrad;
         }
 
         public override string ToString()
         {
-            return $"\t\tKnappe:\t{_name}\t\tGrad:\t\t{_ausbildungsgrad}\n";
+            return $"\t\tKnappe:\t{Name}\t\tGrad:\t\t{Ausbildungsgrad}\n";
         }
 
     }

@@ -36,9 +36,9 @@ namespace RitterturnierWPF
         public WaffenArt _waffenArt;
         
 
-            // Checkboxes
-            public bool _waffeCheckBoxChecked = false;
-            public bool _knappeCheckBoxchecked = false;
+        // Checkboxes
+        public bool _waffeCheckBoxChecked = false;
+        public bool _knappeCheckBoxchecked = false;
 
         public MainWindow()
         {
@@ -53,9 +53,6 @@ namespace RitterturnierWPF
 
             // Initialize Statusbar
             Statusbar.Content = "Keine Statusmeldungen vorhanden.";
-
-            // Load the Teilnehmerliste
-
         }
 
         // Checkbox-Logic
@@ -118,7 +115,6 @@ namespace RitterturnierWPF
         }
 
 
-
         private void Ritter_Erstellen(object sender, RoutedEventArgs e)
         {
             // Überprüfen ob alle Felder gültig sind
@@ -132,14 +128,14 @@ namespace RitterturnierWPF
                     Ritter ritter = new Ritter(_ritterName, _ritterTelef, _ritterRufname);
                     if (_waffeCheckBoxChecked) { ritter.AddWaffe(new Waffe(_waffeBezeichnung, _waffenArt)); }
                     if(_knappeCheckBoxchecked) { ritter.AddKnappe(new Knappe(_knappeName, _knappeTelef, _knappeAusbildungsgrad)); }
-                    NameSchonVorhandenException exception = _ritterturnier._teilnehmerliste.AddTeilnehmer(ritter);
+                    NameSchonVorhandenException exception = _ritterturnier.Teilnehmerliste.AddTeilnehmer(ritter);
                     // Erfolgreiche Erstellung eines Ritters
                     if (exception == null)
                     {
                         StatusSuccess("Erstellung Erfolgreich!");
 
                         // Liste aktualisieren
-                        Main_Output.Text = _ritterturnier._teilnehmerliste.ListeAlleTeilnehmer();
+                        Main_Output.Text = _ritterturnier.Teilnehmerliste.ListeAlleTeilnehmer();
                     }
                     else { throw exception; }
                 }
@@ -260,7 +256,7 @@ namespace RitterturnierWPF
         {
             try
             {
-                _filemanager.ToFile(_ritterturnier._teilnehmerliste);
+                _filemanager.ToFile(_ritterturnier.Teilnehmerliste);
                 StatusSuccess("Speichern Erfolgreich!");
             }
             catch (Exception ex)
@@ -274,14 +270,22 @@ namespace RitterturnierWPF
         {
             try
             {
-                _ritterturnier._teilnehmerliste = _filemanager.FromFile();
-                StatusSuccess("Laden Erfolgreich");
-                Main_Output.Text = _ritterturnier._teilnehmerliste.ListeAlleTeilnehmer();
+                _ritterturnier.Teilnehmerliste = _filemanager.FromFile();
+                
+                StatusSuccess($"Laden Erfolgreich - {_ritterturnier.Teilnehmerliste.TeilnehmerlisteList.Count} Teilnehmer geladen!");
+                Main_Output.Text = _ritterturnier.Teilnehmerliste.ListeAlleTeilnehmer();
             }
             catch (Exception ex)
             {
                 StatusError("Fehler beim Laden!");
             }
+        }
+
+        private void Clear_Button_Click(object sender, RoutedEventArgs e)
+        {
+            _filemanager.ToFile(new Teilnehmerliste());
+            Main_Output.Text = "";
+            StatusSuccess("Clearen Erfolgreich!");
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿RitterturnierWPF
 1.0.0.0
 
-winexe
+exe
 C#
 .cs
 C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\obj\Debug\net8.0-windows\
@@ -16,5 +16,5 @@ C:\gitRepos\Ritterturnier-WPF\Ritterturnier\RitterturnierWPF\App.xaml
 1991953648046
 MainWindow.xaml;
 
-True
+False
 

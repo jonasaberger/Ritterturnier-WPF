@@ -9,7 +9,7 @@ namespace RitterturnierXUNIT
         public RitterTest() {
 
             this._ritter = new Ritter("Ritter", "+12 123 12341234", "TestRitter");
-            this._ritter._id = 1; // ID manuell zuweisen um Fehler in der toString-Testung vorzubeugen
+            this._ritter.ID = 1; // ID manuell zuweisen um Fehler in der toString-Testung vorzubeugen
         }
 
         [Fact]

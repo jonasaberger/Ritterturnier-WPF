@@ -26,24 +26,18 @@ namespace RitterturnierKonsole
                 {
                     foreach (var ritter in ritterListe)
                     {
-                        Console.WriteLine(ritter.ToString());
+                        teilnehmerliste.AddTeilnehmer(ritter);
                     }
                 }
-
-                //ERFOLG
-
-
             }
             return teilnehmerliste;
         }
 
 
-
-
         public async Task ToFile(Teilnehmerliste teilnehmerliste)
         {
             List<string> ritterJsonList = new List<string>();
-            foreach (Teilnehmer teilnehmer in teilnehmerliste._teilnehmerliste)
+            foreach (Teilnehmer teilnehmer in teilnehmerliste.TeilnehmerlisteList)
             {
                 if (teilnehmer is Ritter ritter)
                 {
@@ -52,6 +46,5 @@ namespace RitterturnierKonsole
             }
             await File.WriteAllTextAsync("../../../saves/ritterturnier-save.json", $"[{string.Join(",\n", ritterJsonList)}]");
         }
-
     }
 }

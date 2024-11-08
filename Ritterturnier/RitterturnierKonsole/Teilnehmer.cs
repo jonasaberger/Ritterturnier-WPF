@@ -11,29 +11,29 @@ namespace RitterturnierKonsole
     public abstract class Teilnehmer
     {
         [JsonInclude]
-        public int _id {  get; set; }
-        public static int _idCounter = 0;
+        public int ID {  get; set; }
+        public static int IDCounter = 0;
 
         [JsonInclude]
-        public string _name {  get; set; }
+        public string Name {  get; set; }
         [JsonInclude]
-        public string _telefonnummer { get; set; }
+        public string Telefonnummer { get; set; }
 
         public Teilnehmer(string name, string telefonnummer) {
-            _idCounter++;
-            this._name = name;
-            this._telefonnummer = telefonnummer;
-            this._id = _idCounter;
+            IDCounter++;
+            this.Name = name;
+            this.Telefonnummer = telefonnummer;
+            this.ID = IDCounter;
         }
 
         public virtual string ToString()
         {
             // toString fuer Ritter
             if (this.GetType() == typeof(Ritter)) {
-                return $"Ritter\t{_id}\tName:\t{_name}\t\t";
+                return $"Ritter\t{ID}\tName:\t{Name}\t\t";
             }
 
-            return $"Name:\t{_name}\t\t";
+            return $"Name:\t{Name}\t\t";
         }
 
     }

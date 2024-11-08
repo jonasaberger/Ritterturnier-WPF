@@ -40,7 +40,7 @@
 
         <Border x:Name="InputsBorder" Height="515" Width="350" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="75" BorderBrush="Black" BorderThickness="0,0,2,0">
             <Grid x:Name="Inputs">
-                <Grid x:Name="Input_Ritter" Width="310" Height="212" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF7C6C6C" Opacity="0.85">
+                <Grid x:Name="Input_Ritter" Width="310" Height="212" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.85" Background="#FF7C6C6C">
                     <Label x:Name="Ritter_Label" Content="Ritter" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="90" Height="28" FontSize="20" FontFamily="Sitka Text Semibold" FontWeight="Bold"/>
                     <TextBox x:Name="Name_Input" HorizontalAlignment="Left" Margin="30,65,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16"/>
                     <TextBox x:Name="Telef_Input" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="100" Height="25" FontSize="16" />
@@ -105,5 +105,6 @@
         <Label x:Name="Statusbar" Content="Statusbar" Canvas.Left="350.5" Canvas.Top="536.84" HorizontalAlignment="Center" VerticalAlignment="Top" Width="349" Height="28" Background="{x:Null}" Foreground="Black"/>
         <Button x:Name="Save_Button" Content="Speichern" Canvas.Left="580" Canvas.Top="25" Width="100" Height="23" Click="Save_Button_Click"/>
         <Button x:Name="Load_Button" Content="Laden" Canvas.Left="465" Canvas.Top="25" Width="100" Height="23" Click="Load_Button_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="Clear_Button" Content="Clear" Canvas.Left="412" Canvas.Top="25" Width="40" Height="23" Click="Clear_Button_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>

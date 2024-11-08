@@ -8,15 +8,15 @@ namespace RitterturnierKonsole
 {
     public class Teilnehmerliste
     {
-        public List<Teilnehmer> _teilnehmerliste {  get; set; }
+        public List<Teilnehmer> TeilnehmerlisteList {  get; set; }
 
         public Teilnehmerliste() {
-            _teilnehmerliste = new List<Teilnehmer>();
+            TeilnehmerlisteList = new List<Teilnehmer>();
         }
 
         public Teilnehmerliste(List<Teilnehmer> teils)
         {
-            _teilnehmerliste = teils;
+            TeilnehmerlisteList = teils;
 
         }
 
@@ -24,11 +24,11 @@ namespace RitterturnierKonsole
         {
             try
             {
-                foreach (Teilnehmer t in _teilnehmerliste)
+                foreach (Teilnehmer t in TeilnehmerlisteList)
                 {
-                    if(t._name == teilnehmer._name) { throw new NameSchonVorhandenException(teilnehmer._name); }
+                    if(t.Name == teilnehmer.Name) { throw new NameSchonVorhandenException(teilnehmer.Name); }
                 }
-                _teilnehmerliste.Add(teilnehmer);
+                TeilnehmerlisteList.Add(teilnehmer);
             }
             catch(NameSchonVorhandenException e)
             {
@@ -42,7 +42,7 @@ namespace RitterturnierKonsole
         public string ListeAlleTeilnehmer()
         {
             string fString = string.Empty;
-            foreach (Teilnehmer t in _teilnehmerliste)
+            foreach (Teilnehmer t in TeilnehmerlisteList)
             {
                 fString += t.ToString();
                 fString += "\n\n";
@@ -54,11 +54,11 @@ namespace RitterturnierKonsole
         public string AlleMitWaffenart(WaffenArt waffenArt)
         {
             string fString = $"Alle Teilnehmer mit Waffenart: {waffenArt}\n";
-            foreach(Teilnehmer t in _teilnehmerliste)
+            foreach(Teilnehmer t in TeilnehmerlisteList)
             {
-                if(((Ritter)t)._waffe != null)
+                if(((Ritter)t).Waffe != null)
                 {
-                    if (((Ritter)t)._waffe._waffenArt == waffenArt)
+                    if (((Ritter)t).Waffe.WaffenArt == waffenArt)
                     {
                         fString += t.ToString();
                         fString += "\n\n";

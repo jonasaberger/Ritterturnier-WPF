@@ -10,17 +10,17 @@ namespace RitterturnierKonsole
     public class Waffe
     {
         [JsonInclude]
-        public string _bezeichnung {  get; set; }
+        public string Bezeichnung {  get; set; }
         [JsonInclude]
-        public WaffenArt _waffenArt {  get; set; }
+        public WaffenArt WaffenArt {  get; set; }
 
         public Waffe(string bezeichnung, WaffenArt waffenArt) {
-            this._bezeichnung = bezeichnung;
-            this._waffenArt = waffenArt;
+            this.Bezeichnung = bezeichnung;
+            this.WaffenArt = waffenArt;
         }
 
         public override string ToString() {
-            return $"\t\tWaffe:\t{_bezeichnung}\t\tArt:\t\t{_waffenArt}\n";
+            return $"\t\tWaffe:\t{Bezeichnung}\t\tArt:\t\t{WaffenArt}\n";
         }
     }
 }

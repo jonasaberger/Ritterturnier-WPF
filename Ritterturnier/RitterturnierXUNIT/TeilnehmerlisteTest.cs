@@ -14,9 +14,9 @@
         [Fact]
         public void AddTeilnehmer_Test()
         {
-            int listSize = _teilnehmerliste._teilnehmerliste.Count;
+            int listSize = _teilnehmerliste.TeilnehmerlisteList.Count;
             _teilnehmerliste.AddTeilnehmer(new Ritter("TestRitter", "+12 123 12341234", "TestRitter"));
-            Assert.Equal(listSize+1, _teilnehmerliste._teilnehmerliste.Count());
+            Assert.Equal(listSize+1, _teilnehmerliste.TeilnehmerlisteList.Count());
         }
 
         [Fact]
@@ -25,7 +25,7 @@
             Ritter ritter = new Ritter("Ritter", "+12 123 13241234", "TestRitter");
             _teilnehmerliste.AddTeilnehmer(ritter);
 
-            Assert.Equal(new NameSchonVorhandenException(ritter._name).Message, _teilnehmerliste.AddTeilnehmer(ritter).Message);
+            Assert.Equal(new NameSchonVorhandenException(ritter.Name).Message, _teilnehmerliste.AddTeilnehmer(ritter).Message);
         }
     }
 }

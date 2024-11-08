@@ -11,64 +11,64 @@ namespace RitterturnierKonsole
     public class Ritter : Teilnehmer
     {
         [JsonInclude]
-        public string _rufname {  get; set; }
+        public string Rufname {  get; set; }
         [JsonInclude]
-        public Waffe _waffe { get; set; }
+        public Waffe Waffe { get; set; }
         [JsonInclude]
-        public Knappe _knappe { get; set; }
+        public Knappe Knappe { get; set; }
 
 
         public Ritter(string name, string telefonnummer, string rufname) : base(name, telefonnummer)
         {
-            this._rufname = rufname;
+            this.Rufname = rufname;
 
-            this._waffe = null;
-            this._knappe = null;
+            this.Waffe = null;
+            this.Knappe = null;
         }
 
 
         // Hinzufuegen eines Knappen zu dem Ritter
         public Ritter AddKnappe(Knappe knappe)
         {
-            _knappe = knappe;
+            Knappe = knappe;
             return this;
         }
 
         // Hinzufuegen einer Waffe zu dem Ritter
         public Ritter AddWaffe(Waffe waffe)
         {
-            _waffe = waffe;
+            Waffe = waffe;
             return this;
         }
 
         public override string ToString()
         {
             //Wenn kein Knappe & Waffe vorhanden ist
-            if(_knappe != null && _waffe != null) {
-                return base.ToString() + $"Rufname:\t{_rufname}\n" + _knappe.ToString() + _waffe.ToString();
+            if(Knappe != null && Waffe != null) {
+                return base.ToString() + $"Rufname:\t{Rufname}\n" + Knappe.ToString() + Waffe.ToString();
             }
-            if(_knappe == null && _waffe != null) // Wenn nur kein Knappe vorhanden
+            if(Knappe == null && Waffe != null) // Wenn nur kein Knappe vorhanden
             {
-                return base.ToString() + $"Rufname:\t{_rufname}\n" + _waffe.ToString();
+                return base.ToString() + $"Rufname:\t{Rufname}\n" + Waffe.ToString();
             }
-            if (_knappe == null && _waffe != null) // Wenn nur kein Waffe vorhanden
+            if (Knappe == null && Waffe != null) // Wenn nur kein Waffe vorhanden
             {
-                return base.ToString() + $"Rufname:\t{_rufname}\n" + _knappe.ToString();
+                return base.ToString() + $"Rufname:\t{Rufname}\n" + Knappe.ToString();
             }
 
-            return base.ToString() + $"Rufname:\t{_rufname}\n";
+            return base.ToString() + $"Rufname:\t{Rufname}\n";
         }
 
         public string PrintRitterAsJson()
         {
             var json = JsonSerializer.Serialize(new
             {
-                _id,
-                _name,
-                _telefonnummer,
-                _rufname,
-                _waffe,
-                _knappe
+                ID,
+                Name,
+                Telefonnummer,
+                Rufname,
+                Waffe,
+                Knappe
             }, new JsonSerializerOptions { WriteIndented = true});
 
             return json;

@@ -8,10 +8,10 @@ namespace RitterturnierKonsole
 {
     public class Ritterturnier
     {
-        public Teilnehmerliste _teilnehmerliste { get; set; }
+        public Teilnehmerliste Teilnehmerliste { get; set; }
 
         public Ritterturnier(Teilnehmerliste teilnehmerliste) {
-            this._teilnehmerliste = teilnehmerliste;
+            this.Teilnehmerliste = teilnehmerliste;
         }
     }
 }
