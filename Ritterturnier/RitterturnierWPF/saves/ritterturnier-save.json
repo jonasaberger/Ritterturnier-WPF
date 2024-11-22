@@ -1,12 +1,8 @@
 [{
-  "ID": 1,
+  "ID": 3,
   "Name": "asdf",
-  "Telefonnummer": "\u002B43 333 33366",
+  "Telefonnummer": "\u002B43 333 33333",
   "Rufname": "asdf",
   "Waffe": null,
-  "Knappe": {
-    "Name": "adsf",
-    "Telefonnummer": "\u002B43 333 33333",
-    "Ausbildungsgrad": 5
-  }
+  "Knappe": null
 }]

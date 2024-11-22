@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            FileManager fileManager = new FileManager();
+            FileManager fileManager = new FileManager("../../../saves/ritterturnier-save.json");
 
             Console.WriteLine("Ritterturnier-Konsole\nJonas Aberger\t 19-10-2024\n\n");
             Ritterturnier ritterturnier_1 = new Ritterturnier(new Teilnehmerliste());

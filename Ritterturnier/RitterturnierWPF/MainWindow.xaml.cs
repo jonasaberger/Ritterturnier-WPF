@@ -22,32 +22,32 @@ namespace RitterturnierWPF
     public partial class MainWindow : Window
     {
         // Backend-Properties
-        public Ritterturnier _ritterturnier;
-        public FileManager _filemanager;
-        public string _ritterName;
-        public string _ritterTelef;
-        public string _ritterRufname;
+        private Ritterturnier _ritterturnier;
+        private FileManager _filemanager;
+        private string _ritterName;
+        private string _ritterTelef;
+        private string _ritterRufname;
 
-        public string _knappeName;
-        public string _knappeTelef;
-        public int _knappeAusbildungsgrad;
+        private string _knappeName;
+        private string _knappeTelef;
+        private int _knappeAusbildungsgrad;
 
-        public string _waffeBezeichnung;
-        public WaffenArt _waffenArt;
+        private string _waffeBezeichnung;
+        private WaffenArt _waffenArt;
 
-        public int _idOffset = 0;
+        private int _idOffset = 0;
         
 
         // Checkboxes
-        public bool _waffeCheckBoxChecked = false;
-        public bool _knappeCheckBoxchecked = false;
+        private bool _waffeCheckBoxChecked = false;
+        private bool _knappeCheckBoxchecked = false;
 
         public MainWindow()
         {
 
             InitializeComponent();
             _ritterturnier = new Ritterturnier(new Teilnehmerliste());
-            _filemanager = new FileManager();
+            _filemanager = new FileManager("../../../saves/ritterturnier-save.json");
 
             // Initialize WaffeComboBox
             WaffenArtComboBox.Items.Add("Schwert");
@@ -295,7 +295,14 @@ namespace RitterturnierWPF
             _filemanager.ToFile(new Teilnehmerliste());
             _ritterturnier = new Ritterturnier(new Teilnehmerliste());
             Main_Output.Text = "";
-            StatusSuccess("Clearen Erfolgreich!");
+            StatusSuccess("DB + Lokales Output gecleared!");
+        }
+
+        private void ClearLocal_Button_Click(object sender, RoutedEventArgs e)
+        {
+            _ritterturnier = new Ritterturnier(new Teilnehmerliste());
+            Main_Output.Text = "";
+            StatusSuccess("Lokales Output gecleared");
         }
     }
 }

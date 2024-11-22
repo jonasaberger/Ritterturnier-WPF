@@ -11,16 +11,18 @@ namespace RitterturnierKonsole
 {
     public class FileManager
     {
-        public FileManager() { }
+        public string Path { get; set; }
+
+        public FileManager(string path) { this.Path = path; }
 
         public Teilnehmerliste FromFile()
         {
             Teilnehmerliste teilnehmerliste = new Teilnehmerliste();
-            if (File.Exists("../../../saves/ritterturnier-save.json"))
+            if (File.Exists(Path))
             {
-                string json = File.ReadAllText("../../../saves/ritterturnier-save.json");
-                Console.WriteLine(json);
-                var ritterListe = JsonSerializer.Deserialize<List<Ritter>>(json);
+                string json = File.ReadAllText(Path);
+                // Schreibweise bewusst ausgelegt auf Erweiterbarkeit
+                List<Ritter> ritterListe = JsonSerializer.Deserialize<List<Ritter>>(json);
 
                 if (ritterListe != null)
                 {
@@ -44,7 +46,7 @@ namespace RitterturnierKonsole
                     ritterJsonList.Add(ritter.PrintRitterAsJson());
                 }
             }
-            await File.WriteAllTextAsync("../../../saves/ritterturnier-save.json", $"[{string.Join(",\n", ritterJsonList)}]");
+            await File.WriteAllTextAsync(Path, $"[{string.Join(",\n", ritterJsonList)}]");
         }
     }
 }
