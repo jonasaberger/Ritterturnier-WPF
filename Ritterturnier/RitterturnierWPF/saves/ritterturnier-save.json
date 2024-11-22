@@ -1,1 +1,12 @@
-[]
+[{
+  "ID": 1,
+  "Name": "asdf",
+  "Telefonnummer": "\u002B43 333 33366",
+  "Rufname": "asdf",
+  "Waffe": null,
+  "Knappe": {
+    "Name": "adsf",
+    "Telefonnummer": "\u002B43 333 33333",
+    "Ausbildungsgrad": 5
+  }
+}]

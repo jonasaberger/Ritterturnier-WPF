@@ -41,6 +41,11 @@ namespace RitterturnierKonsole
             return this;
         }
 
+        public void CorrectID(int offset)
+        {
+            ID -= offset;
+        }
+
         public override string ToString()
         {
             //Wenn kein Knappe & Waffe vorhanden ist
@@ -51,7 +56,7 @@ namespace RitterturnierKonsole
             {
                 return base.ToString() + $"Rufname:\t{Rufname}\n" + Waffe.ToString();
             }
-            if (Knappe == null && Waffe != null) // Wenn nur kein Waffe vorhanden
+            if (Knappe != null && Waffe == null) // Wenn nur kein Waffe vorhanden
             {
                 return base.ToString() + $"Rufname:\t{Rufname}\n" + Knappe.ToString();
             }

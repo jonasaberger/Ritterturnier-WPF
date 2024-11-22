@@ -34,6 +34,8 @@ namespace RitterturnierWPF
 
         public string _waffeBezeichnung;
         public WaffenArt _waffenArt;
+
+        public int _idOffset = 0;
         
 
         // Checkboxes
@@ -42,6 +44,7 @@ namespace RitterturnierWPF
 
         public MainWindow()
         {
+
             InitializeComponent();
             _ritterturnier = new Ritterturnier(new Teilnehmerliste());
             _filemanager = new FileManager();
@@ -128,19 +131,25 @@ namespace RitterturnierWPF
                     Ritter ritter = new Ritter(_ritterName, _ritterTelef, _ritterRufname);
                     if (_waffeCheckBoxChecked) { ritter.AddWaffe(new Waffe(_waffeBezeichnung, _waffenArt)); }
                     if(_knappeCheckBoxchecked) { ritter.AddKnappe(new Knappe(_knappeName, _knappeTelef, _knappeAusbildungsgrad)); }
+     
                     NameSchonVorhandenException exception = _ritterturnier.Teilnehmerliste.AddTeilnehmer(ritter);
+                    ritter.CorrectID(_idOffset);
                     // Erfolgreiche Erstellung eines Ritters
                     if (exception == null)
                     {
                         StatusSuccess("Erstellung Erfolgreich!");
 
+
                         // Liste aktualisieren
                         Main_Output.Text = _ritterturnier.Teilnehmerliste.ListeAlleTeilnehmer();
                     }
-                    else { throw exception; }
+                    else {
+                        throw exception; 
+                    }
                 }
                 catch(NameSchonVorhandenException ex)
                 {
+                    _idOffset++;
                     StatusError(ex.Message);
                 }
             }
@@ -284,6 +293,7 @@ namespace RitterturnierWPF
         private void Clear_Button_Click(object sender, RoutedEventArgs e)
         {
             _filemanager.ToFile(new Teilnehmerliste());
+            _ritterturnier = new Ritterturnier(new Teilnehmerliste());
             Main_Output.Text = "";
             StatusSuccess("Clearen Erfolgreich!");
         }
